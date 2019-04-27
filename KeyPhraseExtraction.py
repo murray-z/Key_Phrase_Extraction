@@ -111,6 +111,6 @@ class KeyPhraseExtraction():
 if __name__ == '__main__':
     with open('./data/test', encoding='utf-8') as f:
         text = f.read()
-    key_phrase_extractor = KeyPhraseExtraction(topk=50)
+    key_phrase_extractor = KeyPhraseExtraction(topk=20)
     key_phrase = key_phrase_extractor.key_phrase_extraction(text)
     key_phrase_extractor.wordcloud(key_phrase)
